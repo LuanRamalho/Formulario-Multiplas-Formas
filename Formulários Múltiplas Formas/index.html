@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário Múltiplsa Formas</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="stepperValue">
+        <span class="steps">1</span>
+        <span>-</span>
+        <span class="steps">2</span>
+        <span>-</span>
+        <span class="steps">3</span>
+        <span>-</span>
+        <span class="steps">4</span>
+      </div>
+      <div id="multistep-form-container">
+        <div class="form-container">
+          <label for="first-name">Nome</label>
+          <input
+            type="text"
+            class="input"
+            placeholder="Entre com seu nome"
+            id="first-name"
+          />
+          <label for="last-name">Sobrenome</label>
+          <input
+            type="text"
+            class="input"
+            placeholder="Entre com seu sobrenome"
+            id="last-name"
+          />
+        </div>
+        <div class="form-container hide">
+          <label for="email-input">Email</label>
+          <input
+            type="email"
+            class="input"
+            placeholder="Enter com seu email"
+            id="email-input"
+          />
+          <label for="phone-input">Número de Telefone</label>
+          <input
+            type="number"
+            class="input"
+            placeholder="Enter com seu número de telefone"
+            id="phone-input"
+          />
+        </div>
+        <div class="form-container hide">
+          <label for="password-input">Senha</label>
+          <input
+            type="password"
+            class="input"
+            placeholder="Entre com sua senha"
+            id="password-input"
+          />
+          <label for="dob-input">Data de nascimento</label>
+          <input type="date" class="input" id="dob-input" />
+        </div>
+        <div class="form-container hide">
+          <label for="address-input">Endereço</label>
+          <input
+            type="text"
+            class="input"
+            placeholder="Entre com seu endereço"
+            id="address-input"
+          />
+          <label for="pin-code">Código PIN</label>
+          <input
+            type="number"
+            class="input"
+            placeholder="Entre com seu código PIN"
+            id="pin-code"
+          />
+        </div>
+
+        <div class="btns">
+          <button class="btn hide" id="previous">Anterior</button>
+          <button class="btn" id="next">Próximo</button>
+          <button class="btn hide" id="submit">Enviar</button>
+        </div>
+      </div>
+      <p id="error-message"></p>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
